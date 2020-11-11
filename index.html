@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Matthew Heering's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/StyleSheets/bootstrap.css">
+  <link rel="stylesheet" href="assets/StyleSheets/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--This section is for the navbar at the top of the page.  I changed the settings in bootstrap.css to change some colors from the default Bootsrap provides.  -->
+  <div class="container-fluid fixed-top">
+    <div class="row">
+      <div class="navbar navbar-expand-lg navbar-dark bg-dark  w-100 p-3"
+        style="background-color: #B3A9A9A9; box-shadow: 0px 10px 18px #000000;" id="myDIV">
+        <a class="navbar-brand" href="#" style="background-color:teal; padding: 5px 10px; border-radius: 4px; "> Matthew
+          Heering</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" style="opacity:100%;">
+          <span class="navbar-toggler-icon" style="opacity:100%;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-right" href="index.html">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-right" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-right" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--This section is for the background.  I am using particle.js to make a background that moves particles around that connect to make dynamic geometric shapes.  -->
+  <div class="container-fluid fixed-top" style="z-index:-1; height: 100%;" style="z-index:0;">
+    <div class="row">
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+      <div class="jumbotron-fluid w-100" id="home">
+        <div id="particles-js">
+          <canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!--This section is providing the about me section using the card class from bootstrap.  This has been modified to have text wrap around the image.  The text adjusts bsed on screen size.-->
+  <div class="container-fluid my-5 ">
+    <div class="row d-flex justify-content-center">
+      <div class="card col-md-8 my-5 mx-5 ">
+        <div class="card-body">
+          <div class="row">
+            <h2 class="card-title" style="color:white;">About Me</h2>
+          </div>
+          <div class="row border-top pt-2">
+            <div class="pull-left">
+              <img src="assets/images/profilePic.jpeg" class="card-img mr-3 mb-2" id="profilePic">
+              <p style="color:white;">Welcome to my portfolio website! My name is Matthew Heering, and I am curretnly a
+                science teacher in St. Louis, MIssouri.
+                I teach Pre-AP and AP Biology, and I coach Girls' lacrosse. Outside of teaching I enjoy technology, ice
+                hockey, and photography. I keep up with current
+                trends in tech to stay fresh. I enjoy seeing all the new software and gadgets. One hobby of mine that's
+                pushed me further into tech
+                has been hackintoshing. I have a prject computer that I work on. My goal is to make it feel as close to
+                real mac as I can. It's given me some headaches
+                but when I get a lot of satisfaction when I solve a problem. </p>
+            </div>
+            <div class="float-left">
+              <p style="color:white;">While teaching is a fun profession, I find myself wanting to move more and more
+                into the tech space.
+                I leanred Swift, the programming language for iOS, and MacOS, last year. As I've dived into this I cam
+                across full-stack web development.
+                This career seems to offer a lot of the things I enjoy about teaching, but also the things I enjoy about
+                tech. I enjoy challenges, and both teaching
+                and tech provide that. But going into full stack development provides me an opportunity to build
+                something. I love the instant gratification of building and testing
+                in real time. You can type somehting out and almost instantaneously see how it works on the. I can
+                tinker with my work and adjust like I do
+                with my hackintosh. If I decide to leave teaching, I beleive I have a future in this space. But if I
+                decide to continue teaching, I can use these skills
+                in my classroom to build a site for my classroom and provide interacive quizzes that will communicate
+                with the learning managaemnt API to send data. No matter what,
+                there is something to be gained. However, at the moment, I am defintely leaning towards leaving the
+                world of teaching, to pursue a career as a full stack web developer. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--This is my footer section with the copyright-->
+  <footer>
+    <div class="fixed-bottom" id="primary">
+    </div>
+    <div class="fixed-bottom justify-content-center d-flex align-middle" id="secondary">
+      <p>Copyright</p>
+    </div>
+  </footer>
+
+
+  <!--this section provides the scripts for the  background, bootstrap elements, and the animation for the navbar to disappear when srcolling. -->
+  <script src="assets/Javascript/scrolling JS/scrollTop.js"></script>
+  <script src="assets/Javascript/javascript_particle_background/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

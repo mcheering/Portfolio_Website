@@ -6,7 +6,7 @@ body {
   box-sizing: border-box;
 }
 
-h2, a , label, input, button, textarea{
+h2, a, label, input, button, textarea{
 	font-family: 'Amatic SC', cursive;
 	font-stretch: expanded;
 	color: white;

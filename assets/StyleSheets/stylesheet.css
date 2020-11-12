@@ -6,13 +6,15 @@ body {
   box-sizing: border-box;
 }
 
-h2, a , p, label, input, button, textarea{
+h2, a , label, input, button, textarea{
 	font-family: 'Amatic SC', cursive;
 	font-stretch: expanded;
 	color: white;
 }
 
-
+p {
+	font-family: 'Oswald', sans-serif;
+}
 
 
 body{margin-top:20px;}
@@ -91,9 +93,6 @@ body{margin-top:20px;}
     background: transparent;
 }
 
-
-
-}
 @media (max-width: 200px) {
     html { font-size: 130%; }
 }
